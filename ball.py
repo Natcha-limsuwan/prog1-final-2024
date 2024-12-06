@@ -27,6 +27,43 @@ def update_ball_velocity(i, xpos, ypos, vx, vy, canvas_width, canvas_height, bal
         vy[i] = -vy[i]
 
 
+class Ball:
+    def __init__(self, color, size, x, y):
+        self.color = color
+        self.size = size
+        self.x = x
+        self.y = y
+
+    @property
+    def color(self):
+        return self.color
+
+    @color.setter
+    def color(self, color):
+        self.color = color
+
+    @property
+    def size(self):
+        return self.size
+
+    @size.setter
+    def size(self, size):
+        self.size = size
 
 
+    @property
+    def x(self):
+        return self.x
+
+    @x.setter
+    def x(self, x):
+        self.x = x
+
+    @property
+    def y(self):
+        return self.y
+
+    @y.setter
+    def y(self, y):
+        self.y = y
 
